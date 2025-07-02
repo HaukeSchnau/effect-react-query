@@ -1,22 +1,27 @@
 {
-  "name": "effect-react-query",
-  "module": "index.ts",
-  "type": "module",
-  "exports": {
-    ".": "./src/index.tsx"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "2.0.6",
-    "@types/bun": "latest",
-    "@types/react": "^19.1.8",
-    "sonner": "^2.0.5"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
-  },
-  "dependencies": {
-    "@tanstack/react-query": "^5.81.5",
-    "effect": "^3.16.11",
-    "react": "^19.1.0"
-  }
+	"name": "effect-react-query",
+	"module": "index.ts",
+	"type": "module",
+	"exports": {
+		".": "./src/index.tsx"
+	},
+	"scripts": {
+		"lint": "biome check .",
+		"lint:fix": "biome check . --write",
+		"typecheck": "tsc --noEmit"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.0.6",
+		"@types/bun": "latest",
+		"@types/react": "^19.1.8",
+		"sonner": "^2.0.5"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	},
+	"dependencies": {
+		"@tanstack/react-query": "^5.81.5",
+		"effect": "^3.16.11",
+		"react": "^19.1.0"
+	}
 }

@@ -5,7 +5,7 @@ import {
 import { ManagedRuntime } from "effect";
 import { toast } from "sonner";
 import { createEffectQuery } from ".";
-import { QueryClient } from "./runtime";
+import { QueryClient } from "./query-client";
 import { ToastConfigContext } from "./toast-config";
 
 const queryClient = new TanstackQueryClient({

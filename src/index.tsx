@@ -25,7 +25,7 @@ import * as Effect from "effect/Effect";
 import * as Exit from "effect/Exit";
 import * as Predicate from "effect/Predicate";
 import * as React from "react";
-import type { QueryClient } from "./runtime";
+import type { QueryClient } from "./query-client";
 import { useToastConfig } from "./toast-config";
 
 export class QueryDefect extends Data.TaggedError("QueryDefect")<{
@@ -306,8 +306,6 @@ export const createEffectQuery = <LiveRuntimeContext extends QueryClient>(
     });
   }
 
-  type UseQueryResultSuccess<TData> = UseQueryResult<TData, unknown>["data"];
-
   type EffectfulInfiniteQueryOptions<
     A,
     E extends EffectfulError,
@@ -411,4 +409,4 @@ export const createEffectQuery = <LiveRuntimeContext extends QueryClient>(
   };
 };
 
-export { QueryClient } from "./runtime";
+export { QueryClient } from "./query-client";
