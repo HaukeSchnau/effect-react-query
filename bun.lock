@@ -3,11 +3,6 @@
   "workspaces": {
     "": {
       "name": "effect-react-query",
-      "dependencies": {
-        "@tanstack/react-query": "^5.81.5",
-        "effect": "^3.16.11",
-        "react": "^19.1.0",
-      },
       "devDependencies": {
         "@biomejs/biome": "2.0.6",
         "@types/bun": "latest",
@@ -15,6 +10,9 @@
         "sonner": "^2.0.5",
       },
       "peerDependencies": {
+        "@tanstack/react-query": "*",
+        "effect": "*",
+        "react": "*",
         "typescript": "^5",
       },
     },
